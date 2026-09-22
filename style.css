@@ -5428,3 +5428,142 @@ h2 em {
     opacity: .75;
 
 }
+
+/* =========================================
+   FIX BACK TO TOP
+========================================= */
+
+.back-to-top {
+
+    position: fixed !important;
+
+    right: 25px !important;
+    left: auto !important;
+
+    bottom: 25px !important;
+    top: auto !important;
+
+    width: 45px !important;
+    height: 45px !important;
+
+    display: grid !important;
+    place-items: center !important;
+
+    border: 1px solid
+        rgba(
+            120,
+            215,
+            255,
+            .25
+        ) !important;
+
+    border-radius: 50% !important;
+
+    color:
+        #eafaff !important;
+
+    background:
+        rgba(
+            7,
+            35,
+            65,
+            .88
+        ) !important;
+
+    box-shadow:
+        0 10px 30px
+        rgba(
+            0,
+            0,
+            0,
+            .28
+        ) !important;
+
+    z-index:
+        9999 !important;
+
+    opacity:
+        0;
+
+    visibility:
+        hidden;
+
+    transform:
+        translateY(15px);
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease,
+        background .3s ease;
+
+}
+
+
+.back-to-top.show {
+
+    opacity:
+        1;
+
+    visibility:
+        visible;
+
+    transform:
+        translateY(0);
+
+}
+
+
+.back-to-top:hover {
+
+    background:
+        rgba(
+            19,
+            75,
+            112,
+            .95
+        ) !important;
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(
+            36,
+            180,
+            235,
+            .20
+        ) !important;
+
+}
+
+
+.back-to-top i {
+
+    font-size:
+        18px;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .back-to-top {
+
+        right:
+            18px !important;
+
+        bottom:
+            18px !important;
+
+        width:
+            43px !important;
+
+        height:
+            43px !important;
+
+    }
+
+}
